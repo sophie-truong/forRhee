@@ -1,0 +1,28 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "src/resources/lib/logger.min.js", "src/resources/config/logging.js", "src/resources/lib/core-min.js", "src/resources/lib/hmac-sha256.js", "src/resources/lib/enc-base64-min.js", "src/resources/lib/hmac-min.js", "src/background/utilities.js", "src/background/background.js", "src/background/tabs.js" ]
+   },
+   "description": "Make an Impact with Every Purchase",
+   "icons": {
+      "128": "src/resources/assets/images/spendright_icon128.png",
+      "16": "src/resources/assets/images/spendright_icon16.png",
+      "48": "src/resources/assets/images/spendright_icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoe/NYX0HqMKRLdpmdTyzKP63bpqqt5cfHTZYOwlTBoDChng9yBQFt9nc2ftS8jl17ib60XTVEGA8lJjTa9yrOJbO8HTy9jaWR3qa4nwM+/Z5MOPSY/vAswyMsbWNGfn+RmaWu0QWm0F2cov01qqGjB/wEACn85CuUI9eskdMI6IMjKIBgTokvQX5gyRZVbKGPZWHPWXKLjRgVooLGNYJmmaG7SvOe1otlMCRExFiSgnN/BeG8kFe5M5NY8BXqz0KmRtWroyrYtOky3YBCCFxAXtdsDXL+abk5QllwllVPXWiBkfz2rBjPiItYaZRoljcumbC7/n6Bj/JB7Ze6L2amQIDAQAB",
+   "manifest_version": 2,
+   "name": "SAV-E Chrome Extension",
+   "page_action": {
+      "default_icon": {
+         "128": "src/resources/assets/images/spendright_icon128.png",
+         "16": "src/resources/assets/images/spendright_icon16.png",
+         "48": "src/resources/assets/images/spendright_icon48.png" 
+     },
+      "default_title": "SAV-E",
+      "default_popup" : "src/templates/homepage.html"
+   },
+   "permissions": [ "https://*/*", "http://*/*", "http://*.amazon.com/*", "https://*.amazon.com/*", "tabs", "activeTab", "storage", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.2",
+   "web_accessible_resources": [ "src/resources/assets/*", "src/resources/fonts/*", "src/templates/*" ]
+}
